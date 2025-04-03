@@ -158,9 +158,7 @@ export const About = () => {
         <div className="why-section mt-10 flex flex-col md:flex-row gap-4 pb-6 justify-center items-center">
   <div className="container px-4 md:px-12 flex flex-col md:flex-row gap-4 justify-start items-start">
     {/* Left Side - Main Reason */}
-    <motion.div 
-      whileHover={{ rotate: [0, 3, -3, 0] }} 
-      className="bg-[#e74c3c] w-full md:max-w-[360px] h-auto md:h-[630px] flex flex-col p-6 md:p-8 rounded-xl text-white">
+    <div className="bg-[#e74c3c] w-full md:max-w-[360px] h-auto md:h-[630px] flex flex-col p-6 md:p-8 rounded-xl text-white">
       <h3 className="text-3xl md:text-4xl text-amber-400 font-bold font-mono mb-4">
         Why Choose Yummy?
       </h3>
@@ -171,7 +169,7 @@ export const About = () => {
       <button className="rounded-3xl mx-auto md:mx-20 p-3 text-red-500 font-bold bg-gray-300 hover:bg-gray-400 transition-all">
         Learn More
       </button>
-    </motion.div>
+    </div>
 
     {/* Right Side - Key Features */}
     <div className="infos grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
@@ -195,9 +193,8 @@ export const About = () => {
           text: "We blend traditional cooking with modern technology, ensuring efficiency without compromising quality."
         }
       ].map((feature, index) => (
-        <motion.div 
+        <div 
           key={index}
-          whileHover={{ rotate: [0, 3, -3, 0] }}
           className={`bg-[${feature.bg}] h-auto md:h-[630px] flex flex-col p-6 md:p-8 rounded-xl text-white text-center`}
         >
           <div className="text-6xl md:text-8xl p-4 md:p-9 flex items-center justify-center">
@@ -209,7 +206,7 @@ export const About = () => {
           <p className="text-base md:text-xl">
             {feature.text}
           </p>
-        </motion.div>
+        </div>
       ))}
     </div>
   </div>

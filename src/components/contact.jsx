@@ -13,7 +13,9 @@ export const Contact = () => {
                 transition={{ duration: 1 }}
             >
                 <h1 className="text-3xl font-bold text-center mt-10 text-blue-600">Find Us Here</h1>
-                <p className="text-center text-gray-500 mt-4">We are located in Adam Street, New York. Come visit us!</p>
+                <p className="text-center text-gray-500 mt-4">
+                    We are located in Adam Street, New York. Come visit us!
+                </p>
                 <div className='flex items-center justify-center mt-10'>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3454.2096777307243!2d-73.99143658813621!3d40.69830713833413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sA108%20Adam%20Street%2C%20New%20York%2C%20NY%20535022!5e1!3m2!1sen!2sma!4v1743612424276!5m2!1sen!2sma"
@@ -47,4 +49,4 @@ export const Contact = () => {
             </motion.div>
         </div>
     );
-}
+};

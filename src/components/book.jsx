@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 export const BookTable = () => {
     return (
+        <div id='BookTable'>
         <motion.div 
             className='mt-10 mb-10'
             initial={{ opacity: 0, y: 50 }}
@@ -30,8 +31,13 @@ export const BookTable = () => {
                     whileInView={{ x: 0, opacity: 1 }} 
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: false, amount: 0.2 }}
+                    className="w-full md:w-auto px-4 md:px-0"
                 >
-                    <img className='w-[560px] h-[600px] rounded-3xl' src={images.reservation} alt="Reservation" />
+                    <img 
+                        className="w-full md:w-[460px] lg:w-[560px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover rounded-3xl" 
+                        src={images.reservation} 
+                        alt="Reservation" 
+                    />
                 </motion.div>
 
                 {/* Form Section */}
@@ -112,5 +118,6 @@ export const BookTable = () => {
                 </motion.form>
             </div>
         </motion.div>
+        </div>
     );
 };

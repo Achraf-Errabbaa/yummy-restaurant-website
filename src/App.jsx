@@ -8,9 +8,9 @@ import { Menu } from './components/menu';
 import { Testimonials } from './components/testimonials';
 import { Chefs } from './components/chefs';
 import { BookTable } from './components/book';
-import { Maps } from './components/maps';
+import { Contact } from './components/contact';
 import { Event } from './components/event';
-import {Gallery} from './components/gallary';
+import {Gallery} from './components/gallery';
 import './App.css';
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
                 <Chefs />
                 <Gallery/>
                 <BookTable />
-                <Maps />
+                <Contact />
               </>} />
 
             </Routes>

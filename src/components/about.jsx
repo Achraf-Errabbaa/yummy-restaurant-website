@@ -155,62 +155,68 @@ export const About = () => {
 </motion.div>
 
         {/* Why Choose Us Section */}
-        <div className="why-section mt-10 flex flex-col md:flex-row gap-4 pb-6 justify-center items-center">
+        
+<div className="why-section mt-10 flex flex-col md:flex-row gap-4 pb-6 justify-center items-center">
   <div className="container px-4 md:px-12 flex flex-col md:flex-row gap-4 justify-start items-start">
+    
     {/* Left Side - Main Reason */}
-    <div className="bg-[#e74c3c] w-full md:max-w-[360px] h-auto md:h-[630px] flex flex-col p-6 md:p-8 rounded-xl text-white">
-      <h3 className="text-3xl md:text-4xl text-amber-400 font-bold font-mono mb-4">
+    <div className="bg-red-600 w-full md:max-w-[360px] h-auto md:h-[630px] flex flex-col p-6 md:p-8 rounded-xl text-white shadow-lg">
+      <h3 className="text-3xl md:text-4xl text-amber-300 font-bold font-mono mb-4">
         Why Choose Yummy?
       </h3>
       <p className="text-lg md:text-2xl mb-6">
         At Yummy, we believe food should be more than just a meal—it should be an experience.
         Our commitment to quality, innovation, and customer satisfaction sets us apart.
       </p>
-      <button className="rounded-3xl mx-auto md:mx-20 p-3 text-red-500 font-bold bg-gray-300 hover:bg-gray-400 transition-all">
+      <button className="rounded-3xl mx-auto md:mx-20 p-3 text-red-600 font-bold bg-gray-100 hover:bg-gray-200 transition-all">
         Learn More
       </button>
     </div>
 
     {/* Right Side - Key Features */}
     <div className="infos grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
-      {[
-        {
-          bg: "#2874a6",
-          icon: <FaClipboardCheck />,
-          title: "Certified Excellence",
-          text: "We maintain high culinary standards and a certified kitchen, ensuring every dish meets premium quality."
-        },
-        {
-          bg: "#6c3483", 
-          icon: <FaGem />,
-          title: "Premium Ingredients",
-          text: "From organic vegetables to hand-selected meats, we use only the finest ingredients for an unforgettable flavor."
-        },
-        {
-          bg: "#117a65",
-          icon: <FaHdd />,
-          title: "Advanced Culinary Tech",
-          text: "We blend traditional cooking with modern technology, ensuring efficiency without compromising quality."
-        }
-      ].map((feature, index) => (
-        <div 
-          key={index}
-          className={`bg-[${feature.bg}] h-auto md:h-[630px] flex flex-col p-6 md:p-8 rounded-xl text-white text-center`}
-        >
-          <div className="text-6xl md:text-8xl p-4 md:p-9 flex items-center justify-center">
-            {feature.icon}
-          </div>
-          <h4 className="text-2xl md:text-3xl font-bold mb-4">
-            {feature.title}
-          </h4>
-          <p className="text-base md:text-xl">
-            {feature.text}
-          </p>
+      {/* Card 1 */}
+      <div className="bg-blue-700 h-auto md:h-[630px] flex flex-col p-6 md:p-8 rounded-xl text-white text-center shadow-lg">
+        <div className="text-6xl md:text-8xl p-4 md:p-9 flex items-center justify-center">
+          <FaClipboardCheck />
         </div>
-      ))}
+        <h4 className="text-2xl md:text-3xl font-bold mb-4">
+          Certified Excellence
+        </h4>
+        <p className="text-base md:text-xl">
+          We maintain high culinary standards and a certified kitchen, ensuring every dish meets premium quality.
+        </p>
+      </div>
+
+      {/* Card 2 */}
+      <div className="bg-purple-700 h-auto md:h-[630px] flex flex-col p-6 md:p-8 rounded-xl text-white text-center shadow-lg">
+        <div className="text-6xl md:text-8xl p-4 md:p-9 flex items-center justify-center">
+          <FaGem />
+        </div>
+        <h4 className="text-2xl md:text-3xl font-bold mb-4">
+          Premium Ingredients
+        </h4>
+        <p className="text-base md:text-xl">
+          From organic vegetables to hand-selected meats, we use only the finest ingredients for an unforgettable flavor.
+        </p>
+      </div>
+
+      {/* Card 3 */}
+      <div className="bg-emerald-700 h-auto md:h-[630px] flex flex-col p-6 md:p-8 rounded-xl text-white text-center shadow-lg">
+        <div className="text-6xl md:text-8xl p-4 md:p-9 flex items-center justify-center">
+          <FaHdd />
+        </div>
+        <h4 className="text-2xl md:text-3xl font-bold mb-4">
+          Advanced Culinary Tech
+        </h4>
+        <p className="text-base md:text-xl">
+          We blend traditional cooking with modern technology, ensuring efficiency without compromising quality.
+        </p>
+      </div>
     </div>
   </div>
 </div>
+
 
         {/* Stats Section */}
         <motion.div

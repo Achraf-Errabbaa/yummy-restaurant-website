@@ -5,22 +5,22 @@ import about2 from "../assets/images/about-2.jpg";
 import stats from "../assets/images/stats-bg.jpg";
 
 // Menu items
-import affogato from "../assets/images/menu/affogato.png";
-import antipastoPlatter from "../assets/images/menu/antipastoPlatter.png";
-import arancini from "../assets/images/menu/arancini.png";
-import bruschetta from "../assets/images/menu/bruschetta.png";
-import cannoli from "../assets/images/menu/cannoli.png";
-import capreseSalad from "../assets/images/menu/capreseSalad.png";
-import eggplantParmesan from "../assets/images/menu/eggplant-parmesan.png";
-import gelatoTrio from "../assets/images/menu/gelatoTrio.png";
-import lasagnabolognese from "../assets/images/menu/lasagna-bolognese.png";
-import ossoBuco from "../assets/images/menu/osso-buco.png";
-import pannaCotta from "../assets/images/menu/panna-cotta.png";
-import risotto from "../assets/images/menu/risotto-alla-milanese.png";
-import espresso from "../assets/images/menu/espresso.png";
-import negroni from "../assets/images/menu/negroni.png";
-import limoncello from "../assets/images/menu/limoncello.png";
-import pellegrino from "../assets/images/menu/pellegrino.png";
+import affogato from "../assets/images/menu/affogato.webp";
+import antipastoPlatter from "../assets/images/menu/antipastoPlatter.webp";
+import arancini from "../assets/images/menu/arancini.webp";
+import bruschetta from "../assets/images/menu/bruschetta.webp";
+import cannoli from "../assets/images/menu/cannoli.webp";
+import capreseSalad from "../assets/images/menu/capreseSalad.webp";
+import eggplantParmesan from "../assets/images/menu/eggplant-parmesan.webp";
+import gelatoTrio from "../assets/images/menu/gelatoTrio.webp";
+import lasagnabolognese from "../assets/images/menu/lasagna-bolognese.webp";
+import ossoBuco from "../assets/images/menu/osso-buco.webp";
+import pannaCotta from "../assets/images/menu/panna-cotta.webp";
+import risotto from "../assets/images/menu/risotto-alla-milanese.webp";
+import espresso from "../assets/images/menu/espresso.webp";
+import negroni from "../assets/images/menu/negroni.webp";
+import limoncello from "../assets/images/menu/limoncello.webp";
+import pellegrino from "../assets/images/menu/pellegrino.webp";
 
 // Testimonials
 import testimonials1 from "../assets/images/testimonials/testimonials-1.jpg";

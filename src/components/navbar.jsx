@@ -28,8 +28,8 @@ export const Navbar = () => {
         </h1>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-10 text-lg font-semibold">
-          <ul className="flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-10 text-lg font-semibold ">
+          <ul className="flex items-center gap-6 ">
             {navLinks.map((link) => (
               <motion.li 
                 key={link.to}
@@ -41,7 +41,7 @@ export const Navbar = () => {
             ))}
           </ul>
           
-          <div className="flex items-center gap-4">
+          <div className="flex items-center pl-40 gap-4">
             <motion.div whileHover={{ scale: 1.2, color: "#60a5fa" }} className="cursor-pointer">
               <Link smooth to="/#contact">Contact</Link>
             </motion.div>

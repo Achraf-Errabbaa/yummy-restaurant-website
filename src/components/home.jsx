@@ -1,11 +1,12 @@
 import React from 'react';
-import {images} from '../constant/images';
+import { images } from '../constant/images';
 import { FaPlayCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { HashLink } from 'react-router-hash-link';
 
 
 export const Home = () => {
+    const [open, setOpen] = React.useState(false);
     return (
         <div className='pt-20' id='hero'>
             <div className='flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-24 p-4 lg:p-10 min-h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]'>
@@ -17,10 +18,10 @@ export const Home = () => {
                         We are team of talented designers making websites with Bootstrap
                     </p>
                     <div className='flex flex-col sm:flex-row justify-center lg:justify-start gap-4 lg:gap-6 mt-6 lg:mt-10'>
-                        
-                        <HashLink smooth to="/#BookTable" className="block py-2"><motion.button 
+
+                        <HashLink smooth to="/#BookTable" className="block py-2"><motion.button
                             whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.95 }} 
+                            whileTap={{ scale: 0.95 }}
                             className='bg-red-500 rounded-3xl w-full sm:w-36 h-12 lg:h-14'
                         >
                             Book a Table
@@ -28,10 +29,11 @@ export const Home = () => {
                         </HashLink>
                         <button
                             type="submit"
+                            onClick={() => setOpen(true)}
                             className="flex justify-center gap-2 items-center shadow-xl text-base lg:text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group w-full sm:w-auto"
                         >
-                            <a href="#video" className="flex items-center text-black">
-                                Watch Video 
+                            <a href="https://www.youtube-nocookie.com/embed/FMrtSHAAPhM" className="flex items-center text-black">
+                                Watch Video
                             </a>
                             <svg
                                 className="w-6 h-6 lg:w-8 lg:h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
@@ -47,23 +49,44 @@ export const Home = () => {
                     </div>
                 </div>
 
-                <motion.div 
-                    animate={{y: [0,-20,0]}} 
+                <motion.div
+                    animate={{ y: [0, -20, 0] }}
                     transition={{
-                        duration: 2, 
-                        repeat: Infinity, 
+                        duration: 2,
+                        repeat: Infinity,
                         repeatType: "reverse",
                         ease: 'easeInOut'
-                    }} 
+                    }}
                     className='w-full lg:w-auto px-4 lg:px-0'
                 >
-                    <img 
-                        src={images.hero} 
-                        alt="Hero" 
+                    <img
+                        src={images.hero}
+                        alt="Hero"
                         className="max-w-full h-auto"
                     />
                 </motion.div>
             </div>
+            {open && (
+                <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden w-[90%] max-w-lg">
+                        <iframe
+                            className="w-full aspect-video"
+                            src="https://www.youtube-nocookie.com/embed/FMrtSHAAPhM"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                        <button
+                            onClick={() => setOpen(false)}
+                            className="w-full py-2 bg-gray-800 text-white font-semibold hover:bg-gray-700"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
+
         </div>
     );
 };

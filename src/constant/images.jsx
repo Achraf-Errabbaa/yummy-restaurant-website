@@ -7,7 +7,7 @@ import stats from "../assets/images/stats-bg.jpg";
 // Menu items
 import affogato from "../assets/images/menu/affogato.webp";
 import antipastoPlatter from "../assets/images/menu/antipastoPlatter.webp";
-import arancini from "../assets/images/menu/arancini.webp";
+import arancini from "../assets/images/menu/Arancini.webp";
 import bruschetta from "../assets/images/menu/bruschetta.webp";
 import cannoli from "../assets/images/menu/cannoli.webp";
 import capreseSalad from "../assets/images/menu/capreseSalad.webp";

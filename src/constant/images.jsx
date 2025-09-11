@@ -9,7 +9,7 @@ import affogato from "../assets/images/menu/affogato.webp";
 import antipastoPlatter from "../assets/images/menu/antipastoPlatter.webp";
 import arancini from "../assets/images/menu/Arancini.webp";
 import bruschetta from "../assets/images/menu/bruschetta.webp";
-import cannoli from "../assets/images/menu/cannoli.webp";
+import cannoli from "../assets/images/menu/Cannoli.webp";
 import capreseSalad from "../assets/images/menu/capreseSalad.webp";
 import eggplantParmesan from "../assets/images/menu/eggplant-parmesan.webp";
 import gelatoTrio from "../assets/images/menu/gelatoTrio.webp";

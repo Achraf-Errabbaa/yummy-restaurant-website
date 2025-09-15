@@ -10,9 +10,9 @@
     "preview": "vite preview",
     "postinstall": "if [ \"$NETLIFY\" != \"true\" ]; then flowbite-react patch; fi"
   },
-  "engines": {
-  "node": "18"
-  },
+"engines": {
+  "node": "22"
+},
   "dependencies": {
     "@react-google-maps/api": "^2.20.6",
     "@tailwindcss/vite": "^4.0.17",
